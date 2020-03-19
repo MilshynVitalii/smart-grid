@@ -1,0 +1,82 @@
+.header {
+	background: url('@{img-path}slaid1.jpg') no-repeat center;
+	min-height: 620px;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.sm-block({
+		background-position: center right 40%;
+	});
+
+	.navigation {
+		position: fixed;
+		background-color: white;
+		width: 100%;
+		max-width: 2048px;
+		height: 100px;
+		top: 0;
+		z-index: 100;
+		&__wrap {
+			.row-flex();
+			align-items: center;
+			justify-content: space-between;
+			height: 100%;
+		}
+		&__logo {
+			.col();
+			display: block;
+			width: 300px;
+			.sm(width, 200px);
+		}
+
+		&__link {
+			color: #333333;
+			&:hover {
+				color: lighten(@main-color, 3%);
+			}
+			&.active {
+				color: lighten(@main-color, 3%);
+			}
+		}
+		&__burger {
+			.col();
+			.sm(display, block);
+
+			display: none;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			&-line {
+				display: block;
+				width: 20px;
+				border: 2px solid #888888;
+				margin: 3px;
+			}
+		}
+	}
+
+	&__nav {
+		.row-flex();
+		.col();
+		.size(5);
+		.size-md(6);
+		.sm(display, none);
+		justify-content: space-between;
+		font-size: 16px;
+	}
+
+	&__wrap {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 35px;
+		color: white;
+		font-weight: 400;
+		text-align: center;
+		span {
+			font-size: 40px;
+		}
+	}
+}
