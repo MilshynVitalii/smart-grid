@@ -1,0 +1,60 @@
+.advantages {
+	padding: 30px 0;
+
+	.section-title {
+		text-align: left;
+		.to(900px, {
+			font-size: 30px;
+			margin: 20px 0;
+		});
+
+		.sm(text-align, center);
+	}
+
+	&__wrap {
+		.row-flex();
+		justify-content: space-between;
+		align-items: center;
+		.sm(justify-content, center);
+	}
+
+	&__planshet {
+		.col();
+		.size(5);
+		.size-md(6);
+		.size-sm(9);
+		.size-xs(12);
+	}
+
+	&__descr {
+		.col();
+		.size(6);
+		.size-sm(10);
+		.sm(text-align, center);
+		.size-xs(12);
+	}
+
+	&__list {
+		margin-top: 40px;
+
+		li {
+			display: flex;
+			margin-bottom: 10px;
+		}
+
+		&-icon {
+			padding: 12px;
+			width: 27px;
+			height: 27px;
+			background-color: lighten(@gray-color, 3%);
+			border-radius: 50%;
+			margin-right: 15px;
+		}
+
+		.item-title {
+			color: @main-color;
+		}
+	}
+
+
+}

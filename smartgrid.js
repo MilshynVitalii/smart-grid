@@ -1,7 +1,7 @@
 module.exports = {
-	offset: '20px',
+	offset: '30px',
 	container: {
 		maxWidth: '1170px',
-		fields: '10px'
+		fields: '30px'
 	}
 };
