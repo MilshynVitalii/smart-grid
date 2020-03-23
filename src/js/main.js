@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	overlay.addEventListener('click', event => {
+		if(!overlay.classList.contains('active')) return;
 		nav.classList.toggle('active');
 		overlay.classList.toggle('active');
 	});
