@@ -1,0 +1,62 @@
+.offers {
+
+	padding-bottom: 40px;
+
+	&__wrap {
+		.row-flex();
+		justify-content: center;
+	}
+
+	&__item {
+		.col();
+		.size(4);
+		.size-sm(12);
+
+		max-width: 350px;
+		margin-bottom: 30px;
+		background-color: @gray-color;
+		text-align: center;
+	}
+
+	.item-title {
+		margin: 20px 0;
+	}
+
+	&__price{
+		padding: 10px 0;
+		color: white;
+		background-color: @main-color;
+		margin-bottom: 20px;
+
+		&-num {
+			font-size: 40px;
+		}
+
+		&-dol {
+			position: relative;
+			top: -15px;
+			font-size: 20px;
+		}
+	}
+
+	&__list {
+		display: inline-block;
+		text-align: left;
+		color: @text-color;
+		margin-bottom: 20px;
+
+		li {
+			margin: 10px 0;
+		}
+
+		&-cheked {
+			color: @main-color;
+		}
+
+		&-cheked, &-cross {
+			margin-right: 10px;
+			font-size: 12px;
+			font-weight: 700;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.stats {
+	padding: 20px 0 40px;
+	background: url('@{img-path}stats-back.png') no-repeat center;
+	min-height: 620px;
+	font-size: 20px;
+	
+	.md(background, @gray-color);
+
+	&__wrap {
+		.row-flex();
+		min-height: 620px;
+		align-items: center;
+	}
+
+	&__item {
+		.col();
+		.size(3);
+		.size-md(6);
+		.size-xs(12);
+		text-align: center;
+		margin-top: 40px;
+
+		&-icon {
+			display: block;
+			align-self: center;
+			max-width: 119px;
+			margin: 0 auto;
+		}
+
+		&-number {
+			font-size: 45px;
+			color: @main-color;
+			margin: 15px 0;
+		}
+
+		&-text {
+			color: #333;
+		}
+	}
+}
