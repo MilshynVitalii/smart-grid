@@ -12,7 +12,7 @@
 	}
 
 	&__wrap {
-		.row-flex();
+		&:extend(.sg-row);
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 30px;
@@ -20,7 +20,7 @@
 	}
 
 	&__planshet {
-		.col();
+		&:extend(.sg-col);
 		.size(5);
 		.size-md(6);
 		.size-sm(9);
@@ -28,7 +28,7 @@
 	}
 
 	&__descr {
-		.col();
+		&:extend(.sg-col);
 		.size(6);
 		.size-sm(10);
 		.sm(text-align, center);

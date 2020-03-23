@@ -7,13 +7,13 @@
 	.md(background, @gray-color);
 
 	&__wrap {
-		.row-flex();
+		&:extend(.sg-row);
 		min-height: 620px;
 		align-items: center;
 	}
 
 	&__item {
-		.col();
+		&:extend(.sg-col);
 		.size(3);
 		.size-md(6);
 		.size-xs(12);

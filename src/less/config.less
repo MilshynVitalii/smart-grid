@@ -29,6 +29,14 @@ p {
 	color: @text-color;
 }
 
+.sg-row {
+	.row-flex();
+}
+
+.sg-col {
+	.col();
+}
+
 h2.section-title {
 	font-size: 35px;
 	font-weight: 400;
@@ -74,4 +82,18 @@ button.main-button {
 			background-color: rgba(white, 0.2);
 		}
 	}
+}
+
+.overlay {
+	position: fixed;
+	top: 80px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000000;
+	opacity: 0;
+	transition: all 0.5s;
+	&.active {
+		opacity: 0.5;
+	}	 
 }

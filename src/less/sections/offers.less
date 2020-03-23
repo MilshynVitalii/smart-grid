@@ -3,12 +3,12 @@
 	padding-bottom: 40px;
 
 	&__wrap {
-		.row-flex();
+		&:extend(.sg-row);
 		justify-content: center;
 	}
 
 	&__item {
-		.col();
+		&:extend(.sg-col);
 		.size(4);
 		.size-sm(12);
 

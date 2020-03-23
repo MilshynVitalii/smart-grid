@@ -44,6 +44,11 @@ function images(){
 			   .pipe(gulp.dest('./build/img'));
 }
 
+function scripts(){
+	return gulp.src('./src/js/**/*.js')
+			   .pipe(gulp.dest('./build/js'));
+}
+
 function watch(){
 	if(isSync){
 		browserSync.init({
@@ -64,7 +69,7 @@ function grid(done){
 	done();
 }
 
-let build = gulp.series(clean, gulp.parallel(html, styles, images));
+let build = gulp.series(clean, gulp.parallel(html, styles, images, scripts));
 let dev = gulp.series(build, watch);
 
 gulp.task('build', build);

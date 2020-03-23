@@ -3,14 +3,14 @@
 	padding-top: 20px;
 
 	&__wrap {
-		.row-flex();
+		&:extend(.sg-row);
 		margin-top: 40px;
 		margin-bottom: 40px;
 		justify-content: center;
 	}
 
 	&__item {
-		.col();
+		&:extend(.sg-col);
 		.size(4);
 		.size-sm(6);
 		.size-xs(12);
