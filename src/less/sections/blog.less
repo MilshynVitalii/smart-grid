@@ -1,0 +1,33 @@
+.blog {
+	padding: 20px 0 40px;
+	text-align: center;
+
+	&__wrap {
+		.row-flex();
+		justify-content: center;
+	}
+
+	&__item {
+		.col();
+		.size(4);
+		.size-sm(6);
+		.size-xs(12);
+		margin-bottom: 40px;
+		max-width: 400px;
+	}
+
+	&__meta {
+		margin-top: 20px;
+		color: @main-color;
+
+		&-icon {
+			margin: 0 5px 0 10px;
+			width: 15px;
+		}
+
+		&-item {
+			position: relative;
+			bottom: 2px;
+		}
+	}
+}
